@@ -11,3 +11,11 @@ eller
 ```
 git commit --amend -m "New commit message"
 ```
+
+## Angre siste commit
+
+```
+git reset ~HEAD
+```
+
+(om du ikke allerede har pushet)
