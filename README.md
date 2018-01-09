@@ -1,5 +1,6 @@
 # Useful commands
 
-* [SSH-kommander](ssh.md)
-* [Git-kommandoer](git.md)
-* [Shell-kommandoer](shell.md)
+* [SSH commands](ssh.md)
+* [Git commands](git.md)
+* [Maven commands](maven.md)
+* [Shell commands](shell.md)
