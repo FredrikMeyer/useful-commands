@@ -12,10 +12,10 @@ eller
 git commit --amend -m "New commit message"
 ```
 
-## Angre siste commit
+## Undo last commit
 
 ```
-git reset ~HEAD
+git reset HEAD~
 ```
 
-(om du ikke allerede har pushet)
+(only if you haven't already pushed)
