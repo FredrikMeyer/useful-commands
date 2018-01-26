@@ -12,6 +12,12 @@ eller
 git commit --amend -m "New commit message"
 ```
 
+## Revert a single file to last commit
+
+```
+git checkout filename
+```
+
 ## Undo last commit
 
 ```
