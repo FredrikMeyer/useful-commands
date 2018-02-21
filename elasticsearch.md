@@ -17,3 +17,15 @@ GET index_name/_search
   }
 }
 ```
+
+
+## Sort the response
+
+```json
+GET my_index/_search
+{
+  "sort": [
+    {"timestamp" : {"order" : "desc"}}
+    ]
+}
+```
