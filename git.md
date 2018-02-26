@@ -18,6 +18,12 @@ git commit --amend -m "New commit message"
 git checkout filename
 ```
 
+## Undo add file to commit
+
+```
+git reset filename
+```
+
 ## Undo last commit
 
 ```
