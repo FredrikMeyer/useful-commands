@@ -26,8 +26,16 @@ git reset filename
 
 ## Undo last commit
 
+To keep the file changes:
+
 ```
 git reset HEAD~
+```
+
+Also restore file changes (ref [stackoverflow](https://stackoverflow.com/questions/927358/how-to-undo-the-most-recent-commits-in-git)):
+
+```
+git reset --hard HEAD~
 ```
 
 (only if you haven't already pushed)
