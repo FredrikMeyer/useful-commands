@@ -18,7 +18,6 @@ GET index_name/_search
 }
 ```
 
-
 ## Sort the response
 
 ```json
@@ -29,3 +28,36 @@ GET my_index/_search
     ]
 }
 ```
+
+## Match `or`
+
+Extended example.
+
+```json
+GET my_index/_search
+{
+  "query": {
+    "bool": {
+      "should": [
+        {"term": {
+          "gender": "male"
+        }},
+        {"term": {
+          "gender": "somewhat male"
+        }}
+      ]
+    }
+  },
+  "_source": "gender",
+  "aggs": {
+    "genres": {
+      "terms": {
+        "field": "gender",
+        "size": 10
+      }
+    }
+  }
+}
+```
+
+We only query for documents having `gender` equal to either `male` or `somewhat male`. Then we use `aggs` to list how many documents contained each `gender` type.
