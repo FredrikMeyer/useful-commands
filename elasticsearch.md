@@ -91,3 +91,15 @@ GET my_index/_search
 ```
 
 Inside a `should` clause, we have two `bool` clauses.
+
+## Update a single field
+
+```json
+POST /indexname/id/_update
+{
+  "doc": {
+    "field_one": 1,
+    "the_other_field": "Psychotherapeutism"
+  }
+}
+```
