@@ -12,6 +12,14 @@ eller
 git commit --amend -m "New commit message"
 ```
 
+## Remove untracked files
+
+```
+git clean -fd
+```
+
+*Deletes* all untracked files from the working directory.
+
 ## Revert a single file to last commit
 
 ```
