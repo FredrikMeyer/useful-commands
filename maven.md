@@ -19,3 +19,11 @@ Then import in `pom.xml` via
         <version>version</version>
 </dependency>
 ```
+
+## Run Maven through a socks proxy
+
+```
+MAVEN_OPTS="-DsocksProxyHost=localhost -DsocksProxyPort=1234" mvn install
+```
+
+Passes the arguments to Java.
