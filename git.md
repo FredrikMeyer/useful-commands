@@ -2,12 +2,12 @@
 
 ## amend
 
-Legge til mer på siste commit (*før* den er pushet).
+Add more on last commit (*before* push)
 
 ```
 git commit --amend --no-edit
 ```
-eller
+or
 ```
 git commit --amend -m "New commit message"
 ```
