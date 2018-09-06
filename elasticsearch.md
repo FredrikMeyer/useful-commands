@@ -103,3 +103,37 @@ POST /indexname/id/_update
   }
 }
 ```
+
+## Discard on term value
+
+Say you don't want results containing certain phone numbers.
+```json
+GET my_phone_numbers/_search
+{
+  "query": {
+    "bool": {
+      "must_not": [
+        {"term": {
+          "phone_number": {
+            "value": 1200161
+          }
+        }},
+        {"term": {
+          "phone_number": {
+            "value": 1000002
+          }
+        }}
+      ]
+    }
+  },
+  "size": 0,
+  "aggs": {
+    "my_aggregation_name": {
+      "terms": {
+        "field": "phone_number",
+        "size": 100
+      }
+    }
+  }
+}
+```
