@@ -15,6 +15,15 @@ scp file.txt username@to_host:/remote/directory/
 
 `host` can also be an IP address.
 
+## Disk usage of a folder or a file
+
+```bash
+du -sh file_path
+```
+
+`-s` for summarize, `-h` for human-readable. From [Stackoverflow](https://unix.stackexchange.com/questions/185764/how-do-i-get-the-size-of-a-directory-on-the-command-line).
+
+
 ## Less
 
 Used for reading files in the terminal. E.g. `less Main.elm`.
