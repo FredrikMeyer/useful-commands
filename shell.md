@@ -21,7 +21,7 @@ scp file.txt username@to_host:/remote/directory/
 du -sh file_path
 ```
 
-`-s` for summarize, `-h` for human-readable. From [Stackoverflow](https://unix.stackexchange.com/questions/185764/how-do-i-get-the-size-of-a-directory-on-the-command-line).
+`-s` for summarize, `-h` for human-readable. From [Stackoverflow](https://unix.stackexchange.com/questions/185764/how-do-i-get-the-size-of-a-directory-on-the-command-line). If you want only the top level directories, add the `-d1` flag.
 
 
 ## Less
