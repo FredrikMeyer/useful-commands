@@ -1,4 +1,4 @@
-# Shell commands
+# Shell / Linux commands
 
 ## Copy folder
 
@@ -44,3 +44,9 @@ From [here](https://www.thegeekstuff.com/2010/02/unix-less-command-10-tips-for-e
 ```bash
 echo -n 'input' | openssl base64
 ```
+
+## Last restart
+```bash
+who -b
+```
+Source [here](https://www.cyberciti.biz/tips/linux-last-reboot-time-and-date-find-out.html).
