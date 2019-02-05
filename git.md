@@ -47,3 +47,11 @@ git reset --hard HEAD~
 ```
 
 (only if you haven't already pushed)
+
+## Inspect stash
+
+```
+git stash show stash@{0} -p
+```
+
+Shows the diff of `stash@{0}`.
