@@ -137,3 +137,15 @@ GET my_phone_numbers/_search
   }
 }
 ```
+
+
+## Using high level REST client
+
+If your ElasticSearch instance is not on `localhost:9200`, but say on `www.something.com/elastic`, then it is not obvious how to configure the high livel REST client. 
+
+The `setPathPrefix` is necesarry to call something other than the rooot URL.
+
+```java
+return new RestHighLevelClient(RestClient.builder(
+    new HttpHost("www.something.com", 443, "https")).setPathPrefix("/elastic"));
+```
