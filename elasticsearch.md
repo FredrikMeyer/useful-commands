@@ -1,5 +1,11 @@
 # Elasticsearch
 
+## Delete all indices
+
+```bash
+curl -X DELETE 'http://localhost:9200/_all'
+```
+
 ## Filter on term value
 
 ```json
