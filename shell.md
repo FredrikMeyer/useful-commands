@@ -44,3 +44,11 @@ From [here](https://www.thegeekstuff.com/2010/02/unix-less-command-10-tips-for-e
 ```bash
 echo -n 'input' | openssl base64
 ```
+
+
+## Do an operation on many files
+
+
+```bash
+find . -type f -name "*.tif" -exec sh -c 'convert "${0}" "${0%.tif}.png"' {} \;
+```
