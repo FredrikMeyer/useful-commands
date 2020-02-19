@@ -55,3 +55,14 @@ git stash show stash@{0} -p
 ```
 
 Shows the diff of `stash@{0}`.
+
+## Move commits from branch to branch
+
+```
+git branch newbranch      # Create a new branch, containing all current commits
+git reset --keep HEAD~3   # Move master back by 3 commits (Make sure you know how many commits you need to go back)
+git checkout newbranch    # Go to the new branch that still has the desired commits
+# Warning: after this it's not safe to do a rebase in newbranch without extra care.
+```
+
+From [this](https://stackoverflow.com/questions/1628563/move-the-most-recent-commits-to-a-new-branch-with-git) answer on StackOverflow.
