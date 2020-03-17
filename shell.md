@@ -58,3 +58,13 @@ who -b
 ```
 Source [here](https://www.cyberciti.biz/tips/linux-last-reboot-time-and-date-find-out.html).
 
+
+## Do something to a list of files
+
+For example `echo` each file name:
+
+```bash
+ls -1 | xargs -L1 echo
+```
+
+`L1` means use one line for each argument.
