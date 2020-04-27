@@ -68,3 +68,11 @@ ls -1 | xargs -L1 echo
 ```
 
 `L1` means use one line for each argument.
+
+## Run a shell script as another user
+
+```bash
+sudo -H -u otheruser bash -c 'echo "I am $USER, with uid $UID"'
+```
+
+Fra [stackoverflow](https://askubuntu.com/questions/294736/run-a-shell-script-as-another-user-that-has-no-password).
