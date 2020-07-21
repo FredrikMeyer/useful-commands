@@ -66,3 +66,9 @@ git checkout newbranch    # Go to the new branch that still has the desired comm
 ```
 
 From [this](https://stackoverflow.com/questions/1628563/move-the-most-recent-commits-to-a-new-branch-with-git) answer on StackOverflow.
+
+## Diff specific file or directory
+
+```
+git diff 27fa75e ada9b57 myfile.txt
+```
